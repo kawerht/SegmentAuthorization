@@ -1,6 +1,6 @@
 {
-    "name": "SegmentAuthorization",
-    "description": "This plugin allows you to decide which users can create segments based on their status: user, admin, super user.",
+    "name": "Segment Authorization",
+    "description": "This plugin allows you to decide which users can create segments based on their permissions: view, write, super user, admin.",
     "version": "0.1.0",
     "theme": false,
     "require": {
@@ -23,7 +23,7 @@
         "docs": "",
         "rss": ""
     },
-    "homepage": "https://github.com/Chardonneaur/SegmentAuthorization",
+    "homepage": "https://github.com/kawerht/SegmentAuthorization",
     "license": "GPL v3+",
     "keywords": ["segment"]
 }
