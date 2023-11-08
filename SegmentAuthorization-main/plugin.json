@@ -1,0 +1,29 @@
+{
+    "name": "Segment Authorization",
+    "description": "This plugin allows you to decide which users can create segments based on their permissions: view, write, super user, admin.",
+    "version": "0.1.0",
+    "theme": false,
+    "require": {
+        "matomo": ">=4.13.0,<6.0.0-b1"
+    },
+    "authors": [
+        {
+            "name": "Klaus Riedel",
+            "email": "k.riedel@hirschtec.eu",
+            "homepage": "https://hirschtec.eu/"
+        }
+    ],
+    "support": {
+        "email": "info@hirschtec.eu",
+        "issues": "",
+        "forum": "",
+        "irc": "",
+        "wiki": "",
+        "source": "",
+        "docs": "",
+        "rss": ""
+    },
+    "homepage": "https://github.com/kawerht/SegmentAuthorization",
+    "license": "GPL v3+",
+    "keywords": ["segment"]
+}
