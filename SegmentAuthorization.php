@@ -6,9 +6,9 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
-namespace Piwik\Plugins\SegmentAuthorization;
+namespace Piwik\Plugins\AuthorSegments;
 
-class SegmentAuthorization extends \Piwik\Plugin
+class AuthorSegments extends \Piwik\Plugin
 {
     public function registerEvents()
     {
@@ -20,7 +20,7 @@ class SegmentAuthorization extends \Piwik\Plugin
     // support archiving just this plugin via core:archive
     public function getArchivingAPIMethodForPlugin(&$method, $plugin)
     {
-        if ($plugin == 'SegmentAuthorization') {
+        if ($plugin == 'AuthorSegments') {
             $method = 'SegmentAuthorization.getExampleArchivedMetric';
         }
     }
