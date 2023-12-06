@@ -6,7 +6,7 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
-namespace Piwik\Plugins\SegmentAuthorization;
+namespace Piwik\Plugins\AuthorSegments;
 
 //we are adding classes here from https://developer.matomo.org
 use Piwik\Piwik;
@@ -19,16 +19,16 @@ use Piwik\Validators\NotEmpty;
 class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
 {
     /** we changed $metric to $segmentauthorization */
-    public $segmentauthorization;
+    public $authorsegmnents;
 
     protected function init()
     {
         // we make this feature only accessible to super users
         $isWritable = Piwik::hasUserSuperUserAccess() && CoreAdminController::isGeneralSettingsAdminEnabled();
         // we changed metric to segmentauthorization and createMetricSetting() to changeSegmentAuthorization
-        $this->segmentauthorization = $this->changeSegmentAuthorization();
+        $this->$authorsegmnents = $this->changeSegmentAuthorization();
         // we make this feature only accessible to super users
-        $this->segmentauthorization->setIsWritableByCurrentUser($isWritable);
+        $this->$authorsegmnents->setIsWritableByCurrentUser($isWritable);
 
     }
 // we changed createMetricSetting() to changeSegmentAuthorization
