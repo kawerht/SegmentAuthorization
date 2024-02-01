@@ -19,16 +19,16 @@ use Piwik\Validators\NotEmpty;
 class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
 {
     /** we changed $metric to $segmentauthorization */
-    public $authorsegmnents;
+    public $authorsegments;
 
     protected function init()
     {
         // we make this feature only accessible to super users
         $isWritable = Piwik::hasUserSuperUserAccess() && CoreAdminController::isGeneralSettingsAdminEnabled();
         // we changed metric to segmentauthorization and createMetricSetting() to changeSegmentAuthorization
-        $this->$authorsegmnents = $this->changeSegmentAuthorization();
+        $this->$authorsegments = $this->changeSegmentAuthorization();
         // we make this feature only accessible to super users
-        $this->$authorsegmnents->setIsWritableByCurrentUser($isWritable);
+        $this->$authorsegments->setIsWritableByCurrentUser($isWritable);
 
     }
 // we changed createMetricSetting() to changeSegmentAuthorization
